@@ -22,12 +22,12 @@ export default async function(req, res){
     //salvar dados do 000 e declarar fechado
     
 
-    /*rows[0].id_jogo = '1'
+    rows[0].id_jogo = '1'
     await rows[0].save();
     console.log(rows[0].id_jogo)
     const larryRow = await sheet.addRow({ status: 'aberto', adversario: 'eu', sexo:'ms', pontos:"10", saques:"5", tcerto:"10", terrado:"5", mcerto:'2', merrado:'1'});
     await larryRow.save();
     res.send({
         title: doc.title,
-    })*/
+    })
 }
