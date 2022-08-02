@@ -74,23 +74,23 @@ function Scoutf(props){
     return(
         <>
             <main className="w-full flex justify-center mt-20">
-                <section className='flex flex-col drop-shadow-2xl bg-white rounded-xl px-5 py-4 gap-2  '>
-                    <div className='flex gap-5'>
-                        <div className='flex flex-col items-center text-white font-black'>
-                            <h1 className='mb-3 text-xl text-gray-700'>toq</h1>
-                            <button onClick={() => updatePcerto(pcerto + 1)} className='w-10 h-10 bg-green-500 mb-5'>{pcerto}</button>
-                            <button onClick={() => updatePerrado(perrado + 1)} className='w-10 h-10 bg-rose-500 mb-5'>{perrado}</button>
-                            <button onClick={passarvalor} className='w-10 h-5 bg-orange-400 text-sm'>PN</button>
+                <section className='flex flex-col drop-shadow-2xl bg-white rounded-xl px-5 py-5 gap-3'>
+                    <div className='flex gap-10 font-black mb-3'>
+                        <div className='flex flex-col items-center text-white'>
+                            <h1 className='mb-5 text-3xl text-gray-700'>toq</h1>
+                            <button onClick={() => updatePcerto(pcerto + 1)} className='w-14 h-14 bg-green-500 mb-5'>{pcerto}</button>
+                            <button onClick={() => updatePerrado(perrado + 1)} className='w-14 h-14 bg-rose-500 mb-5'>{perrado}</button>
+                            <button onClick={passarvalor} className='w-14 h-7 bg-orange-400 text-sm'>PN</button>
                         </div>
-                        <div className='flex flex-col items-center text-white font-black'>
-                            <h1 className='mb-3 text-xl text-gray-700'>man</h1>
-                            <button onClick={() => updateScerto(scerto + 1)} className='w-10 h-10 bg-green-500 mb-5'>{scerto}</button>
-                            <button onClick={() => updateSerrado(serrado + 1)} className='w-10 h-10 bg-rose-500 mb-5'>{serrado}</button>
-                            <button onClick={passarvalorp} className='w-10 h-5 bg-orange-300 text-sm'>PD</button>
+                        <div className='flex flex-col items-center text-white'>
+                            <h1 className='mb-5 text-3xl text-gray-700'>man</h1>
+                            <button onClick={() => updateScerto(scerto + 1)} className='w-14 h-14 bg-green-500 mb-5'>{scerto}</button>
+                            <button onClick={() => updateSerrado(serrado + 1)} className='w-14 h-14 bg-rose-500 mb-5'>{serrado}</button>
+                            <button onClick={passarvalorp} className='w-14 h-7 bg-orange-300 text-sm'>PD</button>
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={sendS} className='bg-white rounded-xl absolute text-sm drop-shadow-2xl px-2'> enviar</button>
+                        <button onClick={sendS} className='bg-white rounded-xl absolute drop-shadow-2xl px-5'> enviar</button>
                     </div>
                     {response.type === 'error' ? <p> erro,tente novamente </p>: ""}
                     {response.type === 'success' ? window.location.replace("/002"): ""}
