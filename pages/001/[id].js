@@ -60,7 +60,7 @@ function Scouts(props){
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={sendS} className='bg-white rounded-xl absolute text-sm drop-shadow-2xl px-5'> enviar</button>
+                        <button onClick={sendS} className='bg-white rounded-xl absolute drop-shadow-2xl px-5'> enviar</button>
                     </div>
                         {response.type === 'error' ? <p> erro,tente novamente </p>: ""}
                         {response.type === 'success' ? window.location.replace("/001"): ""}
