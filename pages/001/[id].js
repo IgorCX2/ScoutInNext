@@ -46,21 +46,21 @@ function Scouts(props){
     return(
         <>
             <main className="w-full flex justify-center mt-20">
-                <section className='flex flex-col drop-shadow-2xl bg-white rounded-xl px-5 py-4 gap-2 '>
-                    <div className='flex gap-5'>
+                <section className='flex flex-col drop-shadow-2xl bg-white rounded-xl px-5 py-5 gap-3 '>
+                    <div className='flex gap-10 font-black mb-3'>
                         <div className='flex flex-col items-center'>
-                            <h1 className='mb-3 font-black text-xl text-gray-700'>baixo</h1>
-                            <button onClick={() => updateContador( arr => [...arr, `1`])} className='w-10 h-10 bg-green-500 mb-5'></button>
-                            <button onClick={() => updateContador( arr => [...arr, `2`])} className='w-10 h-10 bg-rose-500'></button>
+                            <h1 className='mb-5 text-3xl text-gray-700'>baixo</h1>
+                            <button onClick={() => updateContador( arr => [...arr, `1`])} className='w-14 h-14 bg-green-500 mb-7'></button>
+                            <button onClick={() => updateContador( arr => [...arr, `2`])} className='w-14 h-14 bg-rose-500'></button>
                         </div>
                         <div className='flex flex-col items-center'>
-                            <h1 className='mb-3 font-black text-xl text-gray-700'>cima</h1>
-                            <button onClick={() => updateContador( arr => [...arr, `3`])} className='w-10 h-10 bg-green-500 mb-5'></button>
-                            <button onClick={() => updateContador( arr => [...arr, `4`])} className='w-10 h-10 bg-rose-500'></button>
+                            <h1 className='mb-5 text-3xl text-gray-700'>cima</h1>
+                            <button onClick={() => updateContador( arr => [...arr, `3`])} className='w-14 h-14 bg-green-500 mb-7'></button>
+                            <button onClick={() => updateContador( arr => [...arr, `4`])} className='w-14 h-14 bg-rose-500'></button>
                         </div>
                     </div>
                     <div className='flex justify-center'>
-                        <button onClick={sendS} className='bg-white rounded-xl absolute text-sm drop-shadow-2xl px-2'> enviar</button>
+                        <button onClick={sendS} className='bg-white rounded-xl absolute text-sm drop-shadow-2xl px-5'> enviar</button>
                     </div>
                         {response.type === 'error' ? <p> erro,tente novamente </p>: ""}
                         {response.type === 'success' ? window.location.replace("/001"): ""}
