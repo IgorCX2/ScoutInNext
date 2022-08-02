@@ -15,7 +15,7 @@ function Selectype(props){
                     </div>
                     {/* blocos */}
                     <div className="mt-5">
-                        <Link href={`/000/${jogo_ativo.status === 'aberto' ? props.idjogos: ""}`}>
+                        <Link href={`/002/${jogo_ativo.status === 'aberto' ? props.idjogos: ""}`}>
                             <div className="flex gap-10 items-center drop-shadow-2xl bg-white rounded-xl px-5 py-2 mt-5">
                                 <div className={jogo_ativo.status === 'aberto' ? "bg-green-500 rounded-full w-16 h-16": "bg-rose-500 rounded-full w-16 h-16"}></div>
                                 <div className="flex">
