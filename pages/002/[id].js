@@ -93,7 +93,7 @@ function Scoutf(props){
                         <button onClick={sendS} className='bg-white rounded-xl absolute text-sm drop-shadow-2xl px-2'> enviar</button>
                     </div>
                     {response.type === 'error' ? <p> erro,tente novamente </p>: ""}
-                    {response.type === 'success' ? window.location.replace("/000"): ""}
+                    {response.type === 'success' ? window.location.replace("/002"): ""}
                 </section> 
             </main>
         </>
