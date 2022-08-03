@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'fundo': '#0C1323',
-        'dkwtblue': '#1453ff',
-        'bluedkblr': '#1809A1',
-        'bluewtblr': '#54BFFD',
-        'telapro': '#0E172C',
+        'fundo': '#0F141A',
+        'telapro': '#0F1923',
+        'fundoshadow': '#1B2733',
+        'verde': '#16E7B5',
+        'vermelho': '#FF4655'
       },
     },
   },
