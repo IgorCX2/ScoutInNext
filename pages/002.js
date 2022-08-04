@@ -81,9 +81,9 @@ function Creatype(){
                             <span className="mb-1">sexo</span>
                             <input className="w-24 border-2 rounded-lg outline-gray-800 p-2 mb-2" list="sexo" name="sexo" onChange={onChangeInput}/>
                             <datalist id="sexo">
-                                <option value="masc">masc</option>
-                                <option value="fem">fem</option>
-                                <option value="mist">mist</option>
+                                <option value="MASCULINO">masculino</option>
+                                <option value="FEMININO">feminino</option>
+                                <option value="MISTO">misto</option>
                             </datalist>
                         </div>
                         <div className="flex flex-col mb-3">
