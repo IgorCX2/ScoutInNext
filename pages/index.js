@@ -73,7 +73,7 @@ function Home(props){
                             <div className='w-full bg-telapro flex flex-col pt-5 px-8 border border-gray-800'>
                                 <h1 className='mb-7 font-medium text-2xl'>Filtrar por Esporte</h1>
                                 <div className='flex justify-between'>
-                                    <Link href="/">
+                                    <Link href="/esporte/futebol">
                                         <div className='h-36 w-36 bg-gradient-to-t from-sky-400/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -82,7 +82,7 @@ function Home(props){
                                             <div className='bottom-0 absolute bg-sky-400 w-full h-1.5'></div>
                                         </div>
                                     </Link>
-                                    <Link href="/">
+                                    <Link href="/esporte/handebol">
                                         <div className='h-36 w-36 bg-gradient-to-t from-purple-500/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -91,7 +91,7 @@ function Home(props){
                                             <div className='bottom-0 absolute bg-purple-500 w-full h-1.5'></div>
                                         </div>
                                     </Link>
-                                    <Link href="/">
+                                    <Link href="/esporte/volei">
                                         <div className='h-36 w-36 bg-gradient-to-t from-emerald-600/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -100,7 +100,7 @@ function Home(props){
                                             <div className='bottom-0 absolute bg-emerald-600 w-full h-1.5'></div>
                                         </div>
                                     </Link>
-                                    <Link href="/">
+                                    <Link href="/esporte/queimada">
                                         <div className='h-36 w-36 bg-gradient-to-t from-rose-500/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
