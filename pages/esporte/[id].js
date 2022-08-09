@@ -11,6 +11,7 @@ function Volei(props){
                 <Container>
                     <main className="flex flex-col items-center justify-center w-full text-white mt-10 gap-7">
                     {jogos.map(jogo => {
+                        const pontos = jogo.pontos.split(",")
                         if(jogo.esporte.toString() == props.id){
                             return(
                                 <section className="flex items-center flex-col justify-center w-full">
@@ -22,6 +23,19 @@ function Volei(props){
                                             <div><span className="font-black text-8xl text-verde">13 </span> <span className="font-bold text-6xl">x </span> <span className="font-black text-8xl text-vermelho"> 11</span></div>
                                             <div className="font-black text-3xl rotate-90 -ml-12 -mb-2">{jogo.adversario}</div>
                                         </div>
+                                    </div>
+                                        <div className="flex gap-7 mt-20">
+                                            {pontos.map(ponto => {
+                                            if(ponto == 1){
+                                                return(
+                                                    <div className="w-9 h-80 bg-verde"></div>
+                                                )    
+                                            }else{
+                                                return(
+                                                    <div className="w-9 h-80 bg-vermelho"></div>
+                                                )
+                                            };
+                                        })}
                                     </div>
                                 </section>
                                 );
