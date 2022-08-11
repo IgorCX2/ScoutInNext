@@ -49,27 +49,7 @@ function Volei(props){
                                             <div className="font-black text-3xl rotate-90 -ml-12 -mb-2">{jogo.adversario}</div>
                                         </div>
                                     </div>
-                                    <div className="flex gap-7 mt-20 justify-start items-end text-center overflow-auto max-w-5xl max-h-96 w-full scrollbonito scroll-pt-5"> 
-                                        {pontos.map(ponto => {
-                                            contador++ 
-                                            const multiplic = Number(mtcertos[contador])*30+'px'
-                                            if(ponto == 1){
-                                                return(
-                                                    <div className="flex flex-col pb-6">
-                                                        <div style={{height: multiplic == '0px' ? '15px': multiplic}} className="w-9 bg-verde "></div>
-                                                        <strong>{mtcertos[contador]}</strong>
-                                                    </div>
-                                                )  
-                                            }else{
-                                                return(
-                                                    <div className="flex flex-col pb-6">
-                                                        <div style={{height: multiplic == '0px' ? '15px': multiplic}} className="w-9 bg-vermelho"></div>
-                                                        <strong>{mtcertos[contador]}</strong>
-                                                    </div>
-                                                )
-                                            };
-                                        })}
-                                    </div>
+
                                     <div className="w-full py-5 px-10 bg-fundoshadow mt-5 max-w-5xl rounded-xl flex justify-between">
                                         <div className="flex gap-16">
                                             <div className="flex flex-col gap-2 items-center relative">
