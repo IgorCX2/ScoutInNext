@@ -73,7 +73,7 @@ function Home(props){
                             <div className='w-full bg-telapro flex flex-col pt-5 px-8 border border-gray-800'>
                                 <h1 className='mb-7 font-medium text-2xl'>Filtrar por Esporte</h1>
                                 <div className='flex justify-between'>
-                                    <Link href="/esporte/futebol">
+                                    <Link href="/">
                                         <div className='h-36 w-36 bg-gradient-to-t from-sky-400/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -82,7 +82,7 @@ function Home(props){
                                             <div className='bottom-0 absolute bg-sky-400 w-full h-1.5'></div>
                                         </div>
                                     </Link>
-                                    <Link href="/esporte/handebol">
+                                    <Link href="/">
                                         <div className='h-36 w-36 bg-gradient-to-t from-purple-500/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -100,7 +100,7 @@ function Home(props){
                                             <div className='bottom-0 absolute bg-emerald-600 w-full h-1.5'></div>
                                         </div>
                                     </Link>
-                                    <Link href="/esporte/queimada">
+                                    <Link href="/">
                                         <div className='h-36 w-36 bg-gradient-to-t from-rose-500/50 to-fundoshadow/0 flex flex-col relative justify-center items-center'>
                                             <div className='flex flex-col text-center'>
                                                 <span className='text-sm'>ESPORTE</span>
@@ -116,7 +116,7 @@ function Home(props){
                                 {jogos.map((jogo)=>{
                                     //pontos
                                     const arrpontos = JSON.parse("[" + jogo.pontos + "]");
-                                    const pontosnossos = arrpontos.filter(letra => letra === 1).length;
+                                    const pontosnossos = arrpontos.filter(ponto => ponto === 1).length;
                                     const pontosdeles = arrpontos.length - pontosnossos
 
                                     //manc certo
@@ -146,8 +146,8 @@ function Home(props){
                                     return(
                                         <div className='w-full flex flex-col relative'>
                                             <div className='w-full bg-telapro flex px-8 border border-gray-800 justify-between items-center relative'>
-                                                <div className='left-0 absolute bg-emerald-400 w-1 h-3/5'></div>
-                                                <div className='left-0 absolute bg-gradient-to-r from-emerald-600/50 to-fundoshadow/0 w-80 h-full'></div>
+                                                <div className={pontosnossos > pontosdeles ? "left-0 absolute bg-emerald-400 w-1 h-3/5": 'absolute'}></div>
+                                                <div className={pontosnossos > pontosdeles ? "left-0 absolute bg-gradient-to-r from-emerald-600/50 to-fundoshadow/0 w-80 h-full": 'absolute'}></div>
                                                 <div className='flex items-center z-10'>
                                                     <Image
                                                         src={img_logo}
