@@ -1,9 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
     body {
-      @apply overflow-x-hidden	;
+      @apply overflow-x-hidden;
     }
+}
+@layer utilities {
+  .scrollbonito::-webkit-scrollbar-track {
+    background-color: #0F141A;
+  }
+  .scrollbonito::-webkit-scrollbar {
+      height: 10px;
+      background: #0F141A;
+  }
+  .scrollbonito::-webkit-scrollbar-thumb {
+      background: #1B2733;
+      border-radius: 30px;
+  }
 }
