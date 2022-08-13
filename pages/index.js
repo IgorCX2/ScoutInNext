@@ -8,7 +8,7 @@ function Home(props){
     return(
         <>
             <div className="absolute w-full left-0 top-0">
-                <div className='w-full min-h-screen h-full bg-fundo'>
+                <div className='w-full min-h-screen h-full bg-fundo top-0'>
                     <Container>
                         <main className="flex justify-between w-full text-white mt-10 gap-7">
                             <section className='flex flex-col gap-7 max-w-xs w-full'>
