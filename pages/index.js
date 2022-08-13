@@ -7,7 +7,7 @@ function Home(props){
     const jogos = props.jogos
     return(
         <>
-            <div className="absolute w-full left-0">
+            <div className="absolute w-full left-0 top-0">
                 <div className='w-full min-h-screen h-full bg-fundo'>
                     <Container>
                         <main className="flex justify-between w-full text-white mt-10 gap-7">
